@@ -5,7 +5,7 @@
 - Display movie information
 
 ### Movie Information
-- <Title>(<Year>)
+- `<Title>(<Year>)`
 - Poster
 - Plotline
 - Genre(s)
