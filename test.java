@@ -11,7 +11,11 @@ import org.json.*;
 class test{
     public static void main(String args[]){
         try{
-            URL url = new URL("https://googledictionaryapi.eu-gb.mybluemix.net/?define=farrago&lang=en");
+            String word = "farrago";
+            String req_url = (
+                "https://googledictionaryapi.eu-gb.mybluemix.net/?define=%s&lang=en"
+            );
+            URL url = new URL(String.format(req_url, word));
             InputStream res = (InputStream)url.getContent();
             JSONArray ja = new JSONArray(new JSONTokener(res));
             System.out.println(ja.toString(4));
