@@ -1,13 +1,14 @@
-package com.oocpro.tmdbdesktop.Tmdb;
+package com.oocpro.tmdbdesktop.tmdb;
 
 import com.oocpro.tmdbdesktop.Constants;
-import java.io.IOException;
+
 import java.io.InputStream;
-import java.net.URL;
+import java.io.IOException;
 import java.net.MalformedURLException;
-import java.util.List;
-import java.util.Iterator;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import org.json.*;
 
 public class Movie{
@@ -23,10 +24,10 @@ public class Movie{
         InputStream res = (InputStream)new URL(geturl).getContent();
         JSONObject movie = new JSONObject(new JSONTokener(res));
 
-        JSONArray ja_genres = movie.getJSONArray("genres");
-        Iterator genres_itr = ja_genres.iterator();
-
         genres = new ArrayList<String>();
+        Iterator genres_itr = movie.getJSONArray("genres").iterator();
+
+        // iterate through each genre and add it's `name` to the `genres` list
         while(genres_itr.hasNext()){
             JSONObject jo = (JSONObject)genres_itr.next();
             genres.add(jo.getString("name"));
