@@ -1,6 +1,6 @@
 package com.oocpro.tmdbdesktop;
 
-import com.oocpro.tmdbdesktop.Tmdb.Movie;
+import com.oocpro.tmdbdesktop.tmdb.Movie;
 import java.io.IOException;
 
 public class Main{
