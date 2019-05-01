@@ -23,7 +23,7 @@ public class Movie{
         String geturl = MOVIEBASEURL+id+"?api_key="+Constants.API_KEY;
         InputStream res = (InputStream)new URL(geturl).getContent();
         JSONObject movie = new JSONObject(new JSONTokener(res));
-        System.out.println(movie.toString(1));
+        //System.out.println(movie.toString(1));
 
         genres = new ArrayList<String>();
         Iterator genres_itr = movie.getJSONArray("genres").iterator();

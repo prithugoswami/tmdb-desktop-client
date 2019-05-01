@@ -11,12 +11,8 @@ import java.util.Iterator;
 import java.util.List;
 
      public class Search{
-        static String MOVIE_NAME;
-        public List<Integer> IDs;
-            public Search()throws IOException,MalformedURLException{                                          //CONSTRUCTOR TO INITIALISE MOVIE ID
-                System.out.println("ENTER MOVIE NAME TO SEARCH ");
-                BufferedReader mnm = new BufferedReader(new InputStreamReader(System.in));
-                MOVIE_NAME = mnm.readLine();
+        public static List<Integer> IDs;
+            public Search(String MOVIE_NAME)throws IOException,MalformedURLException{                                          //CONSTRUCTOR TO INITIALISE MOVIE ID
                 String s_url=Constants.BASEURL+"/search/movie?api_key="+Constants.API_KEY+"&language=en-US&query=%s";     //General URL format for finding a movie
                 String url=String.format(s_url,MOVIE_NAME);                              //Adding the query
                 System.out.println("URL = "+url);
@@ -32,7 +28,7 @@ import java.util.List;
                     IDs.add(id.getInt("id"));
                 }
 
-                System.out.println(IDs + " ");
+                //System.out.println(IDs.get(1) + " ");
                 //System.out.println(ja.toString(1));
 
             
@@ -41,9 +37,9 @@ import java.util.List;
         
         
         }
-        public static void main(String args[])throws IOException{
-            Search sc = new Search();
-        }
+        //public static void main(String args[])throws IOException{
+         //   Search sc = new Search();
+        //}
     }
   
 
