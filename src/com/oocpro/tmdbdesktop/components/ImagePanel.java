@@ -1,4 +1,4 @@
-package com.oocpro.tmdbdesktop;
+package com.oocpro.tmdbdesktop.components;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
