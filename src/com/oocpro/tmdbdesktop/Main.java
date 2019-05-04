@@ -2,7 +2,7 @@ package com.oocpro.tmdbdesktop;
 
 import com.oocpro.tmdbdesktop.tmdb.Movie;
 import com.oocpro.tmdbdesktop.tmdb.Search;
-import com.oocpro.tmdbdesktop.ImagePanel;
+import com.oocpro.tmdbdesktop.components.ImagePanel;
 
 import java.awt.Dimension;
 import java.io.IOException;
