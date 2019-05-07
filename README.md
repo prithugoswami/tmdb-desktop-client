@@ -10,8 +10,8 @@ about them.
 
 Compile with:
 
-    javac -cp "src/:lib/*" src/com/oocpro/tmdbdesktop/Main.java
+    javac -cp "src/:lib/*" -d out src/com/oocpro/tmdbdesktop/Main.java
 
 Run:
 
-    java -cp "src/:lib/*" com.oocpro.tmdbdesktop.Main    
+    java -cp "out/:lib/*" com.oocpro.tmdbdesktop.Main    
