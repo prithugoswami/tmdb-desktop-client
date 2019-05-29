@@ -1,12 +1,12 @@
 # Simple TMDb Desktop Client
 
 A simple desktop client that allows users to search Movies and view information
-about them. 
+about them.
 
+A small project [@PacificPR](https://github.com/PacificPR) and me worked on as a part of a course, Object 
+Oriented Concepts.
 
 ## Compile and Run
-
-**Note: from the root directory**
 
 Compile with:
 
