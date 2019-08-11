@@ -29,7 +29,7 @@ public class Main{
 
         ImagePanel ip = new ImagePanel(det.poster);
 
-        JFrame f = new JFrame();
+        JFrame f = new JFrame("TMDb Desktop Client");
         f.setSize(new Dimension(det.poster.getWidth(), 
                     det.poster.getHeight()));
         f.add(ip);
